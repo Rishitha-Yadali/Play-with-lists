@@ -242,7 +242,7 @@ function updateListDisplay() {
         container.appendChild(boxContainer);
     });
 
-    // Ensure data types are displayed for new or updated values
+    
     globalList.forEach((value, index) => checkDataType({ value: value }, index));
 
     displayMethods(globalList);
