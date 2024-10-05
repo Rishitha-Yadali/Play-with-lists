@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures in Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Structures in Python</h1>
+        <p class="subheading">Click on the data structures below to practice and learn!</p>
+        <div class="data-structures">
+            <div class="data-structure" id="list" onclick="selectDataStructure('list')">List</div>
+            <div class="data-structure" id="tuple">Tuple</div>
+            <div class="data-structure" id="dictionary">Dictionary</div>
+            <div class="data-structure" id="set">Set</div>
+        </div>
+        <div class="size-selection" id="size-selection" style="display: none;">
+            <label for="size">Default Select Size:</label>
+            <input type="number" id="size" placeholder="Enter size up to 7" min="1" max="7" onchange="generateBoxes()">
+            <p id="error-message" style="color: red; display: none;">Max value is 7</p>
+        </div>
+        <div id="boxes-container"></div>
+        <div id="list-display"></div>
+        <div id="methods-container" style="display: none;">
+            <h2>Methods:</h2>
+            <ul id="methods-list" class="methods-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
